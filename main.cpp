@@ -1,6 +1,7 @@
 #include "Core/.h/Foo.h"
 
-main()
+int main()
 {
+
 	return 0;
 }
