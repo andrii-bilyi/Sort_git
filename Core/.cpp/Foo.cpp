@@ -46,5 +46,5 @@ void SortBetweenNegativeElements(int arr[], int size) {
 			}
 		}
 	}
-	cout << "Сортировка между отрицательными элементами" << endl;
+	cout << "Сортировка между первым и последним отрицательными элементами" << endl;
 }
