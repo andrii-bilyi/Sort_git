@@ -14,6 +14,21 @@ int main()
 	int Arr[Size];
 	InitArray3(Arr, Size);
 	ShowArray(Arr, Size);
-
+	cout << "¬ведите случайное число из диапазона от 1 до 20: ";
+	int key;
+	cin >> key;
+	cout << endl;
+	int index;
+	index = Search(Arr, Size, key);
+	if (index != -1)
+	{
+		cout << "„исло " << key << " есть в массиве под номером " << index << endl;
+		Sort(Arr, Size, index);
+		ShowArray(Arr, Size);
+	}
+	else
+	{
+		cout << "„исло " << key << " отсутствует в массиве\n";
+	}
 	return 0;
 }
