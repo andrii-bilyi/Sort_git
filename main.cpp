@@ -14,6 +14,8 @@ int main()
 	int Arr[Size];
 	InitArray3(Arr, Size);
 	ShowArray(Arr, Size);
+	RandArray(Arr, Size);
+	cout << "Массив перемешан в случайном порядке" << endl;
 	cout << "Введите случайное число из диапазона от 1 до 20: ";
 	int key;
 	cin >> key;
