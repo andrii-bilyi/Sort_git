@@ -28,7 +28,31 @@ int Search(int arr[], int size, int x) {
 	}
 	return -1;
 }
-void Sort(int arr[], int size, int x) {
-
-
+void SortArray(int arr[], int size, int X) {
+	int temp = 0;	
+	
+		for (int i = 0; i < X; i++)
+		{
+			for (int j = X - 1; j > i; j--)
+			{
+				if (arr[j - 1] < arr[j])
+				{
+					temp = arr[j - 1];
+					arr[j - 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}		
+		for (int i = X + 1; i < size; i++)
+		{
+			for (int j = size - 1; j > i; j--)
+			{
+				if (arr[j - 1] > arr[j])
+				{
+					temp = arr[j - 1];
+					arr[j - 1] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
 }

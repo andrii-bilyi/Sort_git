@@ -23,7 +23,7 @@ int main()
 	if (index != -1)
 	{
 		cout << "Число " << key << " есть в массиве под номером " << index << endl;
-		Sort(Arr, Size, index);
+		SortArray(Arr, Size, index);
 		ShowArray(Arr, Size);
 	}
 	else
